@@ -29,5 +29,45 @@
 </script>
 
 <style scoped>
+  #proyectos {
+    padding: 20px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .contenedor-proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .proyectos {
+    width: 80%;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .titulo-proyecto {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .texto-proyecto {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  .enlaces a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #4caf50;
+  }
 
 </style>
