@@ -34,7 +34,7 @@ body, html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ebf2fa;
 }
 
 
@@ -42,7 +42,6 @@ body, html {
   display: flex;
   flex-direction: row;
   min-height: 100%;
-  height: 100vh;
   width: 100vw;
 
   @media (max-width: 768px) {
@@ -56,10 +55,10 @@ body, html {
 
 .contenido {
   flex-grow: 1;
-  max-width: 70%;
+  max-width: 60%;
   padding: 20px;
-  margin: 0 0 0 30%;
-  background-color: #f9f9f9;
+  margin: 0 0 0 40%;
+  background-color: #0b132b;
   box-sizing: border-box;
 
   @media (max-width: 768px){
