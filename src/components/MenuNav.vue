@@ -3,8 +3,8 @@
     <h1>David Romero Cabello</h1>
     <h2>Fullstack developer</h2>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
+      <li :class="{ active:seccionActiva === 'about' }"><a href="#about">About</a></li>
+      <li :class="{ active:seccionActiva === 'proyectos' }"><a href="#proyectos">Proyectos</a></li>
     </ul>
     <div class="enlaces">
       <a href="https://github.com/Da-rc" target="_blank">
@@ -18,6 +18,32 @@
 </template>
 
 <script>
+export default {
+  data() {
+    return {
+      seccionActiva: null,
+    };
+  },
+  methods: {
+    manejoScroll() {
+      const secciones = document.querySelectorAll('section');
+      secciones.forEach(seccion => {
+        const rect = seccion.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 &&
+            rect.bottom >= window.innerHeight / 2) {
+          this.seccionActiva = seccion.id;
+        }
+      });
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.manejoScroll);
+    this.manejoScroll();
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.manejoScroll);
+  }
+}
 
 </script>
 
@@ -29,8 +55,7 @@
     top: 0;
     bottom: 0;
     width: 40%;
-    background-color: #0b132b;
-    color: #ebf2fa;
+    background-color: #36495a;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     padding: 20px;
     display: flex;
@@ -43,13 +68,14 @@
     font-size: 1.9rem;
     font-weight: bold;
     margin-bottom: 0px;
+    color: #F2F2F2;
   }
 
   h2 {
     margin-left: 15%;
     font-size: 1.4rem;
-    color: #ebf2fa;
     margin-bottom: 50px;
+    color: #F2F2F2;
   }
 
   ul {
@@ -62,16 +88,21 @@
     gap: 15px;
   }
 
+  li.active a {
+    color: #748cab;
+
+  }
+
   a {
     text-decoration: none;
     font-weight: bold;
-    color: #ebf2fa;
+    color: #F2F2F2;
     font-size: 1rem;
     transition: color 0.3s;
   }
 
   a:hover {
-    color: #f0ebd8;
+    color: #748cab;
   }
 
   .enlaces {

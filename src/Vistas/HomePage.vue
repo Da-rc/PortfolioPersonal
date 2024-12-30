@@ -1,8 +1,8 @@
 <template>
   <div>
     <main>
-      <AboutComp />
-      <ProyectosComp />
+      <AboutComp :seleccion="seleccion" @seleccion-cambiada="actualizarSeleccion" />
+      <ProyectosComp :seleccion="seleccion"/>
     </main>
   </div>
 
@@ -15,8 +15,19 @@ import AboutComp from "@/components/AboutComp.vue";
 import ProyectosComp from "@/components/ProyectosComp.vue";
 
 export default defineComponent({
-  components: {ProyectosComp, AboutComp}
-})
+  components: {ProyectosComp, AboutComp},
+  data() {
+    return {
+      seleccion: '',
+    };
+  },
+  methods: {
+    actualizarSeleccion(seleccion) {
+      this.seleccion = seleccion;
+      console.log(seleccion);
+    }
+  }
+});
 </script>
 
 <style scoped>

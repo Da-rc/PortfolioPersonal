@@ -30,11 +30,13 @@ body, html {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ebf2fa;
+  color: #121a32;
 }
 
 
@@ -57,8 +59,8 @@ body, html {
   flex-grow: 1;
   max-width: 60%;
   padding: 20px;
-  margin: 0 0 0 40%;
-  background-color: #0b132b;
+  margin: 0 0 0 39%;
+  background-color: #F2F2F2;
   box-sizing: border-box;
 
   @media (max-width: 768px){

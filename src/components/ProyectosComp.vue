@@ -12,7 +12,11 @@
           <p class="texto-proyecto">{{ proyecto.texto }}</p>
 
           <div class="contenedor-keywords">
-            <div v-for="key in proyecto.keys" :key="key" class="keyword">
+            <div v-for="key in proyecto.keys"
+                 class="keyword"
+                 :key="key.nombre"
+                 :class="{ selected : key.nombre === seleccion }"
+            >
               <p class="nombre-keyword">{{ key.nombre }}</p>
             </div>
           </div>
@@ -35,6 +39,7 @@
 import "primeicons/primeicons.css";
 
   export default {
+    props: ['seleccion'],
     data() {
       return {
         proyectos: [
@@ -45,6 +50,7 @@ import "primeicons/primeicons.css";
             keys: [
               {nombre: 'JavaScript'},
               {nombre: 'Vue.js'},
+              {nombre: 'HTML & CSS'},
             ],
           },
           {id: 2, titulo: 'Web gestión interna', texto: "Una web ficticia de gestión interna de oficinas y usuarios. El back está" +
@@ -60,6 +66,7 @@ import "primeicons/primeicons.css";
               {nombre: 'API REST'},
               {nombre: 'JavaScript'},
               {nombre: 'Vue.js'},
+              {nombre: 'HTML & CSS'},
               {nombre: 'Firebase Authenticator'},
             ],
           },
@@ -112,17 +119,13 @@ import "primeicons/primeicons.css";
   .proyectos {
     width: 95%;
     padding: 15px;
-    background-color: #0b132b;
-    box-shadow: 0 2px 5px rgba(0.2, 0.2, 0.2, 0.4);
+    background-color: #F2F2F2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  .proyectos:hover {
-    background-color: #1d2d44;
   }
 
   .imagen-proyecto {
@@ -168,12 +171,12 @@ import "primeicons/primeicons.css";
 
   .enlaces a {
     margin-right: 10px;
-    color: #748cab;
+    color: #3e5c76;
     font-size: 1.5rem;
   }
 
   .enlaces a:hover {
-    color: #f0ebd8;
+    color: #748cab;
   }
 
   .contenedor-keywords  {
@@ -183,7 +186,7 @@ import "primeicons/primeicons.css";
   }
 
   .keyword {
-    margin: 10px 0 0 10px;
+    margin: 10px 10px 0 0;
     background-color: #3e5c76;
     padding: 10px;
     border-radius: 20px;
@@ -191,6 +194,12 @@ import "primeicons/primeicons.css";
 
   .nombre-keyword{
     font-size: 0.8rem;
+    color: #F2F2F2;
+    font-weight: 400;
+  }
+
+  .selected {
+    background-color: #121a32;
   }
 
 </style>
