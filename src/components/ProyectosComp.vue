@@ -133,7 +133,6 @@ import "primeicons/primeicons.css";
     margin-right: 5%;
     margin-top: 3%;
     align-self: flex-start;
-
   }
 
   .imagen-proyecto img {
@@ -142,6 +141,7 @@ import "primeicons/primeicons.css";
     height: auto;
     border-radius: 5px;
     object-fit: cover;
+    border: solid 3px rgba(54,	73,	90, 0.2) ;
   }
 
   .info-proyecto {
