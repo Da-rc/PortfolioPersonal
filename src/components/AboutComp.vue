@@ -159,6 +159,7 @@ export default {
     padding: 15px;
     width: 120px;
     background-color: #3e5c76;
+    cursor: pointer;
   }
 
   .selected {
