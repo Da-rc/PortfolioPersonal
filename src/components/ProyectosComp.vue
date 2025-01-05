@@ -104,8 +104,8 @@ import "primeicons/primeicons.css";
 
 <style scoped>
   #proyectos {
-    margin-top: 20%;
-    padding: 20px;
+    padding: 17% 0 0;
+    margin: 0;
   }
 
   .contenedor-proyectos {
@@ -201,5 +201,13 @@ import "primeicons/primeicons.css";
   .selected {
     background-color: #121a32;
   }
+
+  @media (max-width: 768px) {
+    #proyectos {
+      padding: 55% 0 0;
+      margin-top: -38%;
+    }
+  }
+
 
 </style>

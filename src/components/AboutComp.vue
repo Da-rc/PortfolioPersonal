@@ -120,7 +120,7 @@ export default {
 
 <style scoped>
   #about {
-    padding: 0;
+    padding: 5% 0 0;
     margin: 0;
   }
 
@@ -176,6 +176,12 @@ export default {
     color: #F2F2F2;
     font-size: 1rem;
     text-align: center;
+  }
 
+  @media (max-width: 768px) {
+    #about {
+      padding: 48% 0 0;
+      margin-top: -43%;
+    }
   }
 </style>
