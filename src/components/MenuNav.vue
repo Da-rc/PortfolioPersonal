@@ -134,10 +134,12 @@ export default {
 
     h1{
       margin: 0 0 0 10%;
+      font-size: 1.8rem;
     }
 
     h2{
       margin-left: 10%;
+      font-size: 1.3rem;
     }
 
     ul{

@@ -53,9 +53,9 @@ import "primeicons/primeicons.css";
               {nombre: 'HTML & CSS'},
             ],
           },
-          {id: 2, titulo: 'Web gestión interna', texto: "Una web ficticia de gestión interna de oficinas y usuarios. El back está" +
-                "desarrollado en Java y Spring Boot para la creación de una API REST, siguiendo una arquitectura hexagonal para proporcionar flexibilidad y escalabilidad." +
-                "Se utiliza una base de datos PostgreSQL para el almacenamiento de datos. El front está desarrollado con el framework Vue.js con un diseño funcional, limpio" +
+          {id: 2, titulo: 'Web gestión interna', texto: "Una web ficticia de gestión interna de oficinas y usuarios. El back está " +
+                "desarrollado en Java y Spring Boot para la creación de una API REST, siguiendo una arquitectura hexagonal para proporcionar flexibilidad y escalabilidad. " +
+                "Se utiliza una base de datos PostgreSQL para el almacenamiento de datos. El front está desarrollado con el framework Vue.js con un diseño funcional, limpio " +
                 "e intuitivo. Se implementa Firebase Authenticator para el login y la autorización de petciones POST, PUT y DELETE. ", github: "https://github.com/Da-rc/Mock-WebEmpresarial",
             web: 'https://mock-webempresarial-production.up.railway.app/',
             imagen: '/empleados.png',
@@ -87,7 +87,7 @@ import "primeicons/primeicons.css";
           },
           {id: 4, titulo: 'Videojuego Android', texto: "Proyecto personal de videojuego para dispositivos Android. Un videojuego de estilo de plataformas clásico en el que" +
                 " el jugador debe ir superando obstáculos y coleccionando objetos para conseguir puntos. Una vez que el jugador finaliza o pierde sus vidas podrá inscribir su nombre y su puntuación en un" +
-                "leaderboard. Proyecto desarrollado en Unity en lenguaje C# con la implementación de Firebase Firestore Database, base de datos basada en documentos, para la gestión de las puntuaciones de usuarios.",
+                " leaderboard. Proyecto desarrollado en Unity en lenguaje C# con la implementación de Firebase Firestore Database, base de datos basada en documentos, para la gestión de las puntuaciones de usuarios.",
             github: 'https://github.com/Da-rc/2DPlatform-Unity',
             imagen: '/platform.jpg',
             keys: [
