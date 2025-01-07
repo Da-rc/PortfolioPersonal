@@ -28,6 +28,7 @@ export default {
                 {nombre: 'JavaScript'},
                 {nombre: 'Vue.js'},
                 {nombre: 'HTML & CSS'},
+                {nombre: 'Git'}
             ],
         },
         {id: 2, titulo: 'Web gestión interna', texto: "Una web ficticia de gestión interna de oficinas y usuarios. El back está " +
@@ -45,6 +46,7 @@ export default {
                 {nombre: 'Vue.js'},
                 {nombre: 'HTML & CSS'},
                 {nombre: 'Firebase Authenticator'},
+                {nombre: 'Git'}
             ],
         },
         {id: 3, titulo: 'Proyecto final DAM', texto: "Mi trabajo final del ciclo DAM fue el desarrollo de un videojuego para dispositivos Android. " +
@@ -60,6 +62,7 @@ export default {
                 {nombre: 'Unity'},
                 {nombre: 'Firebase Authenticator'},
                 {nombre: 'Firebase Firestore Database'},
+                {nombre: 'Git'}
             ],
         },
         {id: 4, titulo: 'Videojuego Android', texto: "Proyecto personal de videojuego para dispositivos Android. Un videojuego de estilo de plataformas clásico en el que" +
@@ -71,6 +74,7 @@ export default {
                 {nombre: 'C#'},
                 {nombre: 'Unity'},
                 {nombre: 'Firebase Firestore Database'},
+                {nombre: 'Git'}
             ],
         },
     ],

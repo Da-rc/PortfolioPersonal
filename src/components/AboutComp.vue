@@ -68,7 +68,10 @@
             <i class="pi pi-database"></i>
             <p>MongoDB</p>
           </div>
-          <div class="herramienta">
+          <div class="herramienta"
+               @click="guardarSeleccion('Git')"
+               :class="{ selected: seleccion === 'Git' }"
+          >
             <i class="pi pi-github"></i>
             <p>Git</p>
           </div>
