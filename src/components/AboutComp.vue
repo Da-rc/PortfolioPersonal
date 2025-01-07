@@ -2,7 +2,7 @@
   <section id="about">
       <div>
         <img :src="avatar" alt="">
-        <p v-html="textoSpa"></p>
+        <p v-html="$t('aboutComp.texto')"></p>
         <div class="herramientas">
           <div class="herramienta"
                @click="guardarSeleccion('Java')"
@@ -82,19 +82,6 @@ export default {
   props: ['seleccion'],
   data() {
     return {
-      textoSpa: '¡Hola <s>mundo!</s> Soy un desarrollador Full Stack apasionado por crear soluciones creativas y útiles. ' +
-          'En 2024, me gradué con <b>matrícula de honor</b> en el ciclo de Desarrollo de Aplicaciones Multiplataforma,' +
-          ' una formación que me ha aportado una base sólida en lenguajes como <b>Java</b>, <b>Kotlin</b> y <b>JavaScript</b>,' +
-          ' así como en frameworks como <b>Spring Boot</b> y <b>Vue.js</b>. También cuento con experiencia trabajando con bases de datos <b>SQL</b> y <b>NoSQL</b>,' +
-          ' metodologías ágiles y buenas prácticas de desarrollo.<br><br>' +
-          'Mi camino hacia el desarrollo de software comenzó en 2021, cuando descubrí el mundo de la programación.' +
-          ' Fue este descubrimiento el que me llevó a dar un giro radical en mi carrera profesional y formarme en el desarrollo de software.' +
-          ' Mi trayectoria previa como integrador social me ha aportado habilidades muy valiosas, como <b>trabajo en equipo</b>,' +
-          ' <b>comunicación efectiva</b> y <b>creatividad para resolver problemas</b>, que, junto a las habilidades técnicas adquiridas en mi formación,' +
-          ' me permiten abordar los proyectos desde una perspectiva integradora.<br><br>' +
-          'Creo en el desarrollo como una herramienta para convertir ideas en realidades que faciliten y mejoren el día a día de los usuarios.' +
-          ' Mi meta es seguir aprendiendo y creciendo,' +
-          ' mientras contribuyo al desarrollo de proyectos que marquen la diferencia.<br><br>',
       avatar: '/avatar.png',
     };
   },

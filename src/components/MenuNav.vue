@@ -1,10 +1,18 @@
 <template>
   <nav>
+    <div class="divIdiomas">
+      <button class="btnIdioma" @click="cambiarIdioma('es')">
+        <img src="/españa.svg" alt="Español" />
+      </button>
+      <button class="btnIdioma" @click="cambiarIdioma('en')">
+        <img src="/english.svg" alt="English" />
+      </button>
+    </div>
     <h1>David Romero Cabello</h1>
-    <h2>Fullstack developer</h2>
+    <h2>{{ $t('menu.profesion') }}</h2>
     <ul>
-      <li :class="{ active:seccionActiva === 'about' }"><a href="#about">About</a></li>
-      <li :class="{ active:seccionActiva === 'proyectos' }"><a href="#proyectos">Proyectos</a></li>
+      <li :class="{ active:seccionActiva === 'about' }"><a href="#about">{{ $t('menu.aboutMenu') }}</a></li>
+      <li :class="{ active:seccionActiva === 'proyectos' }"><a href="#proyectos">{{ $t('menu.proyectosMenu') }}</a></li>
     </ul>
     <div class="enlaces">
       <a href="https://github.com/Da-rc" target="_blank">
@@ -18,6 +26,7 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
@@ -35,6 +44,10 @@ export default {
         }
       });
     },
+    cambiarIdioma(idioma) {
+      this.$i18n.locale = idioma;
+      localStorage.setItem('idioma', idioma);
+    }
   },
   mounted() {
     window.addEventListener('scroll', this.manejoScroll);
@@ -63,11 +76,34 @@ export default {
     align-items: flex-start;
   }
 
+  .divIdiomas {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 5% 15%;
+    gap: 5px;
+  }
+
+  .btnIdioma {
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .btnIdioma img {
+    width: 20px;
+    height: auto;
+  }
+
+  .btnIdioma:hover {
+    transform: scale(1.1);
+  }
+
   h1 {
-    margin: 10% 0 0 15%;
+    margin: 0 0 0 15%;
     font-size: 1.9rem;
     font-weight: bold;
-    margin-bottom: 0px;
     color: #F2F2F2;
   }
 
@@ -130,6 +166,15 @@ export default {
       left: 0;
       bottom: auto;
       position: sticky;
+    }
+
+    .divIdiomas {
+      margin: 0 0 2% 10%;
+    }
+
+    .btnIdioma img {
+      width: 17px;
+      padding: 0;
     }
 
     h1{
