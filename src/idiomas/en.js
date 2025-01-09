@@ -32,7 +32,7 @@ export default {
             ],
         },
         {id: 2, titulo: 'Internal Management Web', texto: "A fictional internal management web application for offices and users. The backend is developed  " +
-                "in Java and Spring Boot to create a API REST, following a hexagonal architecture to provide flexibility and scalability. " +
+                "in Java and Spring Boot to create a REST API, following a hexagonal architecture to provide flexibility and scalability. " +
                 "PostgreSQL is used as the database. The frontend is built with the Vue.js framework, featuring a functional, clean, and intuitive " +
                 "design. Firebase Authenticator is implemented for login and authorization of POST, PUT and DELETE requests. ", github: "https://github.com/Da-rc/Mock-WebEmpresarial",
             web: 'https://mock-webempresarial-production.up.railway.app/',
