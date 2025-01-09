@@ -1,6 +1,6 @@
 export default {
     menu: {
-        profesion: 'FullStack developer',
+        profesion: 'Full Stack developer',
         aboutMenu: 'About',
         proyectosMenu: 'Projects',
     },
