@@ -11,8 +11,8 @@
     <h1>David Romero Cabello</h1>
     <h2>{{ $t('menu.profesion') }}</h2>
     <ul>
-      <li :class="{ active:seccionActiva === 'about' }"><a href="#about">{{ $t('menu.aboutMenu') }}</a></li>
-      <li :class="{ active:seccionActiva === 'proyectos' }"><a href="#proyectos">{{ $t('menu.proyectosMenu') }}</a></li>
+      <li :class="{ active:seccionActiva === 'about' }" @click="scrollToSection('about')">{{ $t('menu.aboutMenu') }}</li>
+      <li :class="{ active:seccionActiva === 'proyectos' }" @click="scrollToSection('proyectos')">{{ $t('menu.proyectosMenu') }}</li>
     </ul>
     <div class="enlaces">
       <a href="https://github.com/Da-rc" target="_blank">
@@ -34,6 +34,13 @@ export default {
     };
   },
   methods: {
+    scrollToSection(seccionNombre) {
+      const seccion = document.getElementById(seccionNombre);
+      if (seccion) {
+        seccion.scrollIntoView({ behavior: 'smooth' });
+        this.seccionActiva = seccionNombre; // Actualiza la sección activa
+      }
+    },
     manejoScroll() {
       const secciones = document.querySelectorAll('section');
       secciones.forEach(seccion => {
@@ -124,20 +131,21 @@ export default {
     gap: 15px;
   }
 
-  li.active a {
+  li.active{
     color: #748cab;
 
   }
 
-  a {
+  li, a{
     text-decoration: none;
     font-weight: bold;
     color: #F2F2F2;
     font-size: 1rem;
     transition: color 0.3s;
+    cursor: pointer;
   }
 
-  a:hover {
+  li:hover, a:hover {
     color: #748cab;
   }
 

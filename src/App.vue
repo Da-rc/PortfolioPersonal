@@ -44,7 +44,6 @@ body, html {
   display: flex;
   flex-direction: row;
   min-height: 100%;
-  width: 100vw;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -56,10 +55,9 @@ body, html {
 }
 
 .contenido {
-  flex-grow: 1;
   max-width: 60%;
   padding: 20px;
-  margin: 0 0 0 39%;
+  margin-left: auto;
   background-color: #F2F2F2;
   box-sizing: border-box;
 
