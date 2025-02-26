@@ -3,3 +3,5 @@ Creación de portfolio personal construido con Vue.js, priorizando un diseño li
 
 Diseño sencillo pero efectivo, diseñado para mostrar mis proyectos destacados, conectar con sus respectivos repositorios en GitHub y detallar las herramientas y lenguajes usados en cada proyecto.
 
+[Portfolio](romerodavid.es)
+
