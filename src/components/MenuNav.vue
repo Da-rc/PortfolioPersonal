@@ -112,6 +112,7 @@ export default {
     font-size: 1.9rem;
     font-weight: bold;
     color: #F2F2F2;
+    cursor: default;
   }
 
   h2 {
@@ -119,6 +120,7 @@ export default {
     font-size: 1.4rem;
     margin-bottom: 50px;
     color: #F2F2F2;
+    cursor: default;
   }
 
   ul {

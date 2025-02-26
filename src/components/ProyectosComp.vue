@@ -97,12 +97,14 @@ import "primeicons/primeicons.css";
     font-size: 1.1rem;
     margin-bottom: 10px;
     align-self: flex-start;
+    cursor: default;
   }
 
   .texto-proyecto {
     font-size: 0.9rem;
     margin-bottom: 10px;
     text-align: justify;
+    cursor: default;
   }
 
   .enlaces {
@@ -131,6 +133,7 @@ import "primeicons/primeicons.css";
     background-color: #3e5c76;
     padding: 10px;
     border-radius: 20px;
+    cursor: default;
   }
 
   .nombre-keyword{

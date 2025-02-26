@@ -131,6 +131,7 @@ export default {
     font-size: 1rem;
     text-align: left;
     margin: 8% 12% 5% 12%;
+    cursor: default;
   }
 
   .herramientas {
