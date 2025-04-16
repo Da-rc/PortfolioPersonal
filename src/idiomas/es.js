@@ -34,8 +34,8 @@ export default {
         {id: 2, titulo: 'Web gestión interna', texto: "Una web ficticia de gestión interna de oficinas y usuarios. El back está " +
                     "desarrollado en Java y Spring Boot para la creación de una API REST, siguiendo una arquitectura hexagonal para proporcionar flexibilidad y escalabilidad. " +
                     "Se utiliza una base de datos PostgreSQL para el almacenamiento de datos. El front está desarrollado con el framework Vue.js con un diseño funcional, limpio " +
-                    "e intuitivo. Se implementa Firebase Authenticator para el login y la autorización de petciones POST, PUT y DELETE. ", github: "https://github.com/Da-rc/Mock-WebEmpresarial",
-            web: 'https://mock-webempresarial-production.up.railway.app/',
+                    "e intuitivo. Se implementa Firebase Authenticator para el login y la autorización de petciones POST, PUT y DELETE. ",
+            github: "https://github.com/Da-rc/Mock-WebEmpresarial",
             imagen: '/empleados.png',
             keys: [
                 {nombre: 'Java'},
