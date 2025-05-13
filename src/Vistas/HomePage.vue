@@ -24,7 +24,6 @@ export default defineComponent({
   methods: {
     actualizarSeleccion(seleccion) {
       this.seleccion = seleccion;
-      console.log(seleccion);
     }
   }
 });

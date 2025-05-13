@@ -1,8 +1,8 @@
 <template>
   <section id="proyectos">
     <div class="contenedor-proyectos">
-      <div v-for="proyecto in $tm('proyectos')" :key="proyecto.id" class="proyectos">
-        <!-- imagen aquí quizas -->
+      <div v-for="proyecto in $tm('proyectos')" :key="proyecto.id" class="proyectos" :data-nombres="proyecto.keys ? proyecto.keys.map(k => k.nombre).join(',') : ''">
+        <!-- imagen aquí -->
         <div class="imagen-proyecto">
           <img :src="proyecto.imagen" alt="">
         </div>

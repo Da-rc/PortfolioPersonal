@@ -66,7 +66,7 @@
                :class="{ selected: seleccion === 'Firebase Firestore Database' }"
           >
             <i class="pi pi-database"></i>
-            <p>MongoDB</p>
+            <p>NoSQL</p>
           </div>
           <div class="herramienta"
                @click="guardarSeleccion('Git')"
@@ -96,12 +96,19 @@ export default {
       }
       this.$emit('seleccion-cambiada', seleccion);
 
-      const proyectosSection = document.getElementById('proyectos');
-      proyectosSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      }
-      );
+      this.$nextTick(() => {
+          const proyectos = document.querySelectorAll('#proyectos .proyectos');
+          for (const proyecto of proyectos) {
+            const data = proyecto.getAttribute('data-nombres');
+            if (data && data.split(',').includes(seleccion)) {
+              proyecto.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              });
+              break;
+            }
+          }
+        });
     },
   },
 };
